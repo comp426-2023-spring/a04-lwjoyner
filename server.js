@@ -11,6 +11,7 @@ else {
     port = args.port;
 }
 
+app.use(express.json());
 
 app.get("/app", (req, res) => {
     res.status(200);
